@@ -13,3 +13,12 @@ data class UserEntity(
     val user_email:String,
     val user_password:String
 )
+
+fun UserEntity.toUser()=User(
+    uuid,
+    name,
+    user_height,
+    user_weight,
+    user_email,
+    user_password
+)
